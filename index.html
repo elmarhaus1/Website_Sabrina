@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabrina Haus – Schauspielerin · Comédienne</title>
+  <meta name="description" content="Sabrina Haus – Schauspielerin und Comédienne. Szenenfotos, Showreel, Audio-Demos und Vita.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Curtain loader -->
+  <div class="curtain" id="curtain">
+    <div class="curtain__left"></div>
+    <div class="curtain__right"></div>
+    <div class="curtain__title">
+      <span class="curtain__name">Sabrina Haus</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__brand">
+      <a href="#hero" class="nav__logo">Sabrina Haus</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links" id="navLinks">
+      <a href="#photos" class="nav__link" data-i18n="nav.photos">Szenenfotos</a>
+      <a href="#video" class="nav__link" data-i18n="nav.video">Video</a>
+      <a href="#audio" class="nav__link" data-i18n="nav.audio">Audio</a>
+      <a href="#vita" class="nav__link" data-i18n="nav.vita">Vita & Kontakt</a>
+      <a href="https://dastheaterensemble.jimdoweb.com/" target="_blank" rel="noopener" class="nav__link nav__link--external">Das Theater Ensemble</a>
+    </div>
+    <button class="nav__lang" id="langToggle" aria-label="Sprache wechseln">
+      <span class="nav__lang-label" id="langLabel">FR</span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__text">
+        <p class="hero__overline" data-i18n="hero.subtitle">Schauspielerin · Comédienne</p>
+        <h1 class="hero__name">Sabrina<br>Haus</h1>
+        <div class="hero__line"></div>
+      </div>
+      <div class="hero__image-frame">
+        <div class="hero__image-wrapper">
+          <img src="/assets/images/Sabrina_Front.jpg" alt="Sabrina Haus – Porträt" class="hero__image">
+        </div>
+        <div class="hero__image-accent"></div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span data-i18n="hero.scroll">Entdecken</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </header>
+
+  <!-- Photos -->
+  <section class="section photos" id="photos">
+    <div class="section__header">
+      <span class="section__number">01</span>
+      <h2 class="section__title" data-i18n="photos.title">Szenenfotos</h2>
+      <div class="section__line"></div>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="gallery__item" data-index="0">
+        <img src="/assets/images/01_Sardines_Suicidees.jpg" alt="Sardines Suicidées" loading="lazy">
+        <figcaption>Sardines Suicidées</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="1">
+        <img src="/assets/images/03_Women_in_the_Parc.jpg" alt="Women in the Parc" loading="lazy">
+        <figcaption>Women in the Parc</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="2">
+        <img src="/assets/images/04_Geschichte_betrifft_Uns.jpg" alt="Geschichte betrifft Uns" loading="lazy">
+        <figcaption>Geschichte betrifft Uns</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="3">
+        <img src="/assets/images/05_Viel_Laerm_um_Nichts.jpg" alt="Viel Lärm um Nichts" loading="lazy">
+        <figcaption>Viel Lärm um Nichts</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="4">
+        <img src="/assets/images/07_Realitaetstheorie.jpg" alt="Realitätstheorie" loading="lazy">
+        <figcaption>Realitätstheorie</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="5">
+        <img src="/assets/images/08_Jil.jpg" alt="Jil" loading="lazy">
+        <figcaption>Jil</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="6">
+        <img src="/assets/images/09_Bernarda_Albas_Haus.jpg" alt="Bernarda Albas Haus" loading="lazy">
+        <figcaption>Bernarda Albas Haus</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="7">
+        <img src="/assets/images/02_kein_Titel.jpg" alt="Szene" loading="lazy">
+        <figcaption>&nbsp;</figcaption>
+      </figure>
+      <figure class="gallery__item" data-index="8">
+        <img src="/assets/images/06_kein_Titel.jpg" alt="Szene" loading="lazy">
+        <figcaption>&nbsp;</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Schließen">&times;</button>
+    <button class="lightbox__prev" aria-label="Vorheriges Bild">&#8249;</button>
+    <button class="lightbox__next" aria-label="Nächstes Bild">&#8250;</button>
+    <div class="lightbox__content">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- Video -->
+  <section class="section video" id="video">
+    <div class="section__header">
+      <span class="section__number">02</span>
+      <h2 class="section__title" data-i18n="video.title">Video</h2>
+      <div class="section__line"></div>
+    </div>
+    <div class="video__grid">
+      <div class="video__item">
+        <div class="video__embed">
+          <iframe src="https://player.vimeo.com/video/124456355?title=0&byline=0&portrait=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="video__info">
+          <h3>Sabrina Haus Demo</h3>
+          <p data-i18n="video.demo_desc">Sprachen: Französisch, Deutsch, Englisch (alle OMU)</p>
+        </div>
+      </div>
+      <div class="video__item">
+        <div class="video__embed">
+          <iframe src="https://player.vimeo.com/video/48553112?title=0&byline=0&portrait=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="video__info">
+          <h3>Personne ne m'aime</h3>
+          <p data-i18n="video.personne_desc">Französisch mit deutschen Untertiteln</p>
+        </div>
+      </div>
+      <div class="video__item">
+        <div class="video__embed">
+          <iframe src="https://player.vimeo.com/video/48618902?title=0&byline=0&portrait=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="video__info">
+          <h3>Jil <span data-i18n="video.jil_type">(Trailer)</span></h3>
+          <p data-i18n="video.jil_desc">Sprache: Deutsch</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audio -->
+  <section class="section audio" id="audio">
+    <div class="section__header">
+      <span class="section__number">03</span>
+      <h2 class="section__title" data-i18n="audio.title">Audio</h2>
+      <div class="section__line"></div>
+    </div>
+    <div class="audio__grid">
+      <div class="audio__item">
+        <div class="audio__meta">
+          <h3>Maries Fest – <span data-i18n="audio.teil1">Teil 1</span></h3>
+          <p data-i18n="audio.maries1_desc">Drama, Dialogausschnitt</p>
+        </div>
+        <audio controls preload="none" src="/assets/audio/Maries_Fest_Teil1.mp3"></audio>
+      </div>
+      <div class="audio__item">
+        <div class="audio__meta">
+          <h3>Maries Fest – <span data-i18n="audio.teil2">Teil 2</span></h3>
+          <p data-i18n="audio.maries2_desc">Drama, Monologausschnitt</p>
+        </div>
+        <audio controls preload="none" src="/assets/audio/Maries_Fest_Teil2.mp3"></audio>
+      </div>
+      <div class="audio__item">
+        <div class="audio__meta">
+          <h3>Nokia</h3>
+          <p data-i18n="audio.nokia_desc">Werbetrailer</p>
+        </div>
+        <audio controls preload="none" src="/assets/audio/Nokia_Werbetrailer.mp3"></audio>
+      </div>
+      <div class="audio__item">
+        <div class="audio__meta">
+          <h3>Edith</h3>
+          <p data-i18n="audio.edith_desc">Komödiantischer Monolog</p>
+        </div>
+        <audio controls preload="none" src="/assets/audio/Edith.mp3"></audio>
+      </div>
+      <div class="audio__item">
+        <div class="audio__meta">
+          <h3>Shoppen und Ficken</h3>
+          <p data-i18n="audio.shoppen_desc">Drama, Monologausschnitt</p>
+        </div>
+        <audio controls preload="none" src="/assets/audio/Shoppen_und_Ficken.mp3"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vita & Contact -->
+  <section class="section vita" id="vita">
+    <div class="section__header">
+      <span class="section__number">04</span>
+      <h2 class="section__title" data-i18n="vita.title">Vita & Kontakt</h2>
+      <div class="section__line"></div>
+    </div>
+    <div class="vita__content">
+      <div class="vita__details">
+        <table class="vita__table">
+          <tr>
+            <td data-i18n="vita.year">Jahrgang</td>
+            <td>1980</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.height">Größe</td>
+            <td>1,67 m</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.eyes">Augenfarbe</td>
+            <td data-i18n="vita.eyes_val">blau</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.hair">Haarfarbe</td>
+            <td data-i18n="vita.hair_val">braun</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.languages">Fremdsprachen</td>
+            <td data-i18n="vita.languages_val">Französisch, Englisch</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.accents">Akzente</td>
+            <td data-i18n="vita.accents_val">Französisch</td>
+          </tr>
+          <tr>
+            <td>Sport</td>
+            <td data-i18n="vita.sport_val">Tennis, Reiten, Schwimmen</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.dance">Tanz</td>
+            <td data-i18n="vita.dance_val">Jazz, freier Tanz, Standard</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.license">Führerschein</td>
+            <td>A & B</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.residence">Wohnsitz</td>
+            <td data-i18n="vita.residence_val">Köln</td>
+          </tr>
+          <tr>
+            <td data-i18n="vita.locations">Wohnmöglichkeiten</td>
+            <td>Paris, Kiel, Dresden</td>
+          </tr>
+        </table>
+        <div class="vita__downloads">
+          <a href="/assets/pdfs/Sabrina_Haus_VITA_2022.pdf" target="_blank" class="vita__download" data-i18n-href-fr="/assets/pdfs/Sabrina_Haus_VITA_2020_FR.pdf">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            <span data-i18n="vita.download">Vita herunterladen (PDF)</span>
+          </a>
+        </div>
+      </div>
+      <div class="vita__contact">
+        <h3 data-i18n="vita.contact_title">Kontakt</h3>
+        <a href="mailto:info@sabrinahaus.com" class="vita__email">info@sabrinahaus.com</a>
+        <p class="vita__agency"><span data-i18n="vita.agency">Agentur</span>: ZAV Köln</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__content">
+      <div class="footer__brand">Sabrina Haus</div>
+      <nav class="footer__links">
+        <a href="#impressum" class="footer__link" data-i18n="footer.imprint">Impressum</a>
+        <a href="https://dastheaterensemble.jimdoweb.com/" target="_blank" rel="noopener" class="footer__link">Das Theater Ensemble</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Sabrina Haus</p>
+    </div>
+  </footer>
+
+  <!-- Impressum Modal -->
+  <div class="modal" id="impressumModal" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Schließen">&times;</button>
+      <h2 data-i18n="imprint.title">Impressum</h2>
+      <div class="modal__body">
+        <p><strong>Sabrina Haus</strong></p>
+        <p>Schauspielerin / Comédienne</p>
+        <br>
+        <p><strong data-i18n="imprint.contact">Kontakt:</strong></p>
+        <p>E-Mail: info(at)sabrinahaus.com</p>
+        <br>
+        <p><strong data-i18n="imprint.responsible">Verantwortlich für den Inhalt gem. § 55 Abs. 2 RStV:</strong></p>
+        <p>Sabrina Haus</p>
+        <br>
+        <p><strong data-i18n="imprint.disclaimer_title">Haftungsausschluss:</strong></p>
+        <p data-i18n="imprint.disclaimer_text">Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Gemäß §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+        <br>
+        <p><strong data-i18n="imprint.links_title">Externe Links:</strong></p>
+        <p data-i18n="imprint.links_text">Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich.</p>
+        <br>
+        <p><strong data-i18n="imprint.copyright_title">Urheberrecht:</strong></p>
+        <p data-i18n="imprint.copyright_text">Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des Autors.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
