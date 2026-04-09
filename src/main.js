@@ -4,7 +4,18 @@ import fr from './i18n/fr.json';
 const translations = { de, fr };
 
 // ─── State ───
-let currentLang = localStorage.getItem('lang') || 'de';
+const LANG_STORAGE_KEY = 'sabrinahaus.lang';
+
+function getInitialLang() {
+  const saved = localStorage.getItem(LANG_STORAGE_KEY);
+  if (saved === 'de' || saved === 'fr') return saved;
+  // Remove any legacy key that may be stuck on a previous value
+  localStorage.removeItem('lang');
+  const browser = (navigator.language || 'de').toLowerCase();
+  return browser.startsWith('fr') ? 'fr' : 'de';
+}
+
+let currentLang = getInitialLang();
 
 // ─── DOM Ready ───
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,7 +48,7 @@ function initI18n() {
 
   langToggle.addEventListener('click', () => {
     currentLang = currentLang === 'de' ? 'fr' : 'de';
-    localStorage.setItem('lang', currentLang);
+    localStorage.setItem(LANG_STORAGE_KEY, currentLang);
     applyLanguage(currentLang);
   });
 }
