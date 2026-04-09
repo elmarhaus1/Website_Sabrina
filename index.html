@@ -129,7 +129,7 @@
     <div class="video__grid">
       <div class="video__item">
         <div class="video__embed">
-          <iframe src="https://player.vimeo.com/video/124456355?title=0&byline=0&portrait=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+          <iframe src="https://player.vimeo.com/video/124456355?title=0&byline=0&portrait=0&dnt=1" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
         </div>
         <div class="video__info">
           <h3>Sabrina Haus Demo</h3>
@@ -138,7 +138,7 @@
       </div>
       <div class="video__item">
         <div class="video__embed">
-          <iframe src="https://player.vimeo.com/video/48553112?title=0&byline=0&portrait=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+          <iframe src="https://player.vimeo.com/video/48553112?title=0&byline=0&portrait=0&dnt=1" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
         </div>
         <div class="video__info">
           <h3>Personne ne m'aime</h3>
@@ -147,7 +147,7 @@
       </div>
       <div class="video__item">
         <div class="video__embed">
-          <iframe src="https://player.vimeo.com/video/48618902?title=0&byline=0&portrait=0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
+          <iframe src="https://player.vimeo.com/video/48618902?title=0&byline=0&portrait=0&dnt=1" allowfullscreen allow="autoplay; fullscreen; picture-in-picture"></iframe>
         </div>
         <div class="video__info">
           <h3>Jil <span data-i18n="video.jil_type">(Trailer)</span></h3>
@@ -279,6 +279,7 @@
       <div class="footer__brand">Sabrina Haus</div>
       <nav class="footer__links">
         <a href="#impressum" class="footer__link" data-i18n="footer.imprint">Impressum</a>
+        <a href="#datenschutz" class="footer__link" data-i18n="footer.privacy">Datenschutz</a>
         <a href="https://dastheaterensemble.jimdoweb.com/" target="_blank" rel="noopener" class="footer__link">Das Theater Ensemble</a>
       </nav>
       <p class="footer__copy">&copy; 2026 Sabrina Haus</p>
@@ -292,23 +293,61 @@
       <button class="modal__close" aria-label="Schließen">&times;</button>
       <h2 data-i18n="imprint.title">Impressum</h2>
       <div class="modal__body">
+        <p data-i18n="imprint.legal_basis"><em>Angaben gemäß § 5 DDG</em></p>
+        <br>
         <p><strong>Sabrina Haus</strong></p>
-        <p>Schauspielerin / Comédienne</p>
+        <p data-i18n="imprint.profession">Schauspielerin / Comédienne</p>
+        <p class="imprint__placeholder">[Straße Hausnummer]</p>
+        <p class="imprint__placeholder">[PLZ Ort]</p>
         <br>
         <p><strong data-i18n="imprint.contact">Kontakt:</strong></p>
-        <p>E-Mail: info(at)sabrinahaus.com</p>
+        <p>E-Mail: <a href="mailto:info@sabrinahaus.com">info@sabrinahaus.com</a></p>
         <br>
-        <p><strong data-i18n="imprint.responsible">Verantwortlich für den Inhalt gem. § 55 Abs. 2 RStV:</strong></p>
-        <p>Sabrina Haus</p>
+        <p><strong data-i18n="imprint.responsible">Verantwortlich für den Inhalt gem. § 18 Abs. 2 MStV:</strong></p>
+        <p>Sabrina Haus (Anschrift wie oben)</p>
         <br>
-        <p><strong data-i18n="imprint.disclaimer_title">Haftungsausschluss:</strong></p>
-        <p data-i18n="imprint.disclaimer_text">Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Gemäß §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+        <p><strong data-i18n="imprint.eu_dispute_title">EU-Streitschlichtung:</strong></p>
+        <p data-i18n="imprint.eu_dispute_text">Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. Ich bin nicht bereit oder verpflichtet, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
         <br>
-        <p><strong data-i18n="imprint.links_title">Externe Links:</strong></p>
-        <p data-i18n="imprint.links_text">Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich.</p>
+        <p><strong data-i18n="imprint.disclaimer_title">Haftung für Inhalte:</strong></p>
+        <p data-i18n="imprint.disclaimer_text">Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+        <br>
+        <p><strong data-i18n="imprint.links_title">Haftung für Links:</strong></p>
+        <p data-i18n="imprint.links_text">Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
         <br>
         <p><strong data-i18n="imprint.copyright_title">Urheberrecht:</strong></p>
-        <p data-i18n="imprint.copyright_text">Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des Autors.</p>
+        <p data-i18n="imprint.copyright_text">Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der jeweiligen Autorin bzw. Erstellerin. Bildrechte: Alle abgebildeten Szenen- und Porträtfotos unterliegen dem Urheberrecht der jeweiligen Fotografinnen und Fotografen und dürfen nicht ohne Genehmigung weiterverwendet werden.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Datenschutz Modal -->
+  <div class="modal" id="privacyModal" aria-hidden="true">
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Schließen">&times;</button>
+      <h2 data-i18n="privacy.title">Datenschutzerklärung</h2>
+      <div class="modal__body">
+        <p><strong data-i18n="privacy.responsible_title">1. Verantwortliche</strong></p>
+        <p data-i18n="privacy.responsible_text">Verantwortlich für die Datenverarbeitung auf dieser Website ist Sabrina Haus. Kontakt: info@sabrinahaus.com. Die vollständige Anschrift entnehmen Sie bitte dem Impressum.</p>
+        <br>
+        <p><strong data-i18n="privacy.general_title">2. Allgemeiner Hinweis</strong></p>
+        <p data-i18n="privacy.general_text">Der Schutz Ihrer persönlichen Daten ist mir ein wichtiges Anliegen. Ich behandle Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften (DSGVO, BDSG) sowie dieser Datenschutzerklärung.</p>
+        <br>
+        <p><strong data-i18n="privacy.hosting_title">3. Hosting (Server-Logfiles)</strong></p>
+        <p data-i18n="privacy.hosting_text">Diese Website wird bei Railway Corp. (548 Market St PMB 77081, San Francisco, CA 94104, USA) gehostet. Beim Besuch der Website werden durch den Hosting-Anbieter automatisch Informationen in Server-Logfiles erfasst, die Ihr Browser übermittelt: IP-Adresse, Datum und Uhrzeit der Anfrage, aufgerufene URL, Referrer-URL, verwendeter Browser und Betriebssystem. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technisch fehlerfreien Darstellung und Sicherheit der Website). Für die Datenübermittlung in die USA wurden mit dem Anbieter EU-Standardvertragsklauseln vereinbart.</p>
+        <br>
+        <p><strong data-i18n="privacy.fonts_title">4. Google Fonts</strong></p>
+        <p data-i18n="privacy.fonts_text">Diese Website nutzt Schriftarten von Google Fonts, bereitgestellt von Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland). Beim Aufruf einer Seite lädt Ihr Browser die benötigten Schriftarten, wodurch Ihre IP-Adresse an Google übermittelt werden kann. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (ansprechende Darstellung des Angebots). Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+        <br>
+        <p><strong data-i18n="privacy.vimeo_title">5. Vimeo (Videos)</strong></p>
+        <p data-i18n="privacy.vimeo_text">Zur Einbindung von Videos nutze ich den Dienst Vimeo der Vimeo.com Inc. (330 West 34th Street, New York 10001, USA). Die Einbindung erfolgt im Do-Not-Track-Modus, sodass Vimeo keine Nutzerprofile erstellt. Beim Abspielen der Videos können dennoch Verbindungsdaten an Vimeo-Server übermittelt werden. Weitere Informationen: <a href="https://vimeo.com/privacy" target="_blank" rel="noopener">https://vimeo.com/privacy</a>.</p>
+        <br>
+        <p><strong data-i18n="privacy.rights_title">6. Ihre Rechte</strong></p>
+        <p data-i18n="privacy.rights_text">Sie haben jederzeit das Recht auf unentgeltliche Auskunft über die zu Ihrer Person gespeicherten personenbezogenen Daten sowie das Recht auf Berichtigung, Sperrung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit. Zur Ausübung wenden Sie sich bitte an die unter „Verantwortliche" genannte Kontaktadresse. Außerdem steht Ihnen ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu.</p>
+        <br>
+        <p><strong data-i18n="privacy.ssl_title">7. SSL-Verschlüsselung</strong></p>
+        <p data-i18n="privacy.ssl_text">Diese Website nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie am Schloss-Symbol in der Browser-Adresszeile und am „https://" am Anfang der Adresse.</p>
       </div>
     </div>
   </div>

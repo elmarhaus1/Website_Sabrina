@@ -206,33 +206,45 @@ function initParallax() {
   });
 }
 
-// ─── Modal (Impressum) ───
+// ─── Modals (Impressum & Datenschutz) ───
 function initModal() {
-  const modal = document.getElementById('impressumModal');
-  const closeBtn = modal.querySelector('.modal__close');
-  const backdrop = modal.querySelector('.modal__backdrop');
+  const modals = [
+    { modal: document.getElementById('impressumModal'), anchor: '#impressum' },
+    { modal: document.getElementById('privacyModal'), anchor: '#datenschutz' },
+  ];
 
-  // Open via anchor
-  document.querySelectorAll('a[href="#impressum"]').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      modal.classList.add('is-active');
-      modal.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    });
-  });
+  function openModal(modal) {
+    modal.classList.add('is-active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
 
-  function closeModal() {
+  function closeModal(modal) {
     modal.classList.remove('is-active');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
   }
 
-  closeBtn.addEventListener('click', closeModal);
-  backdrop.addEventListener('click', closeModal);
+  function closeAll() {
+    modals.forEach(({ modal }) => closeModal(modal));
+  }
+
+  modals.forEach(({ modal, anchor }) => {
+    if (!modal) return;
+
+    document.querySelectorAll(`a[href="${anchor}"]`).forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        closeAll();
+        openModal(modal);
+      });
+    });
+
+    modal.querySelector('.modal__close').addEventListener('click', () => closeModal(modal));
+    modal.querySelector('.modal__backdrop').addEventListener('click', () => closeModal(modal));
+  });
+
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && modal.classList.contains('is-active')) {
-      closeModal();
-    }
+    if (e.key === 'Escape') closeAll();
   });
 }
